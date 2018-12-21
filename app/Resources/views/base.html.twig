@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="robots" content="" />
+        <meta name="description" content="" />
+        <meta name="format-detection" content="telephone=no">
+        <!-- Favicons Icon -->
+        <link rel="icon" href="{{ asset("assets/images/favicon.html") }}" type="image/x-icon" />
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset("assets/images/logo aequo2.png") }}" />
+        <!-- Page Title Here -->
+        <title>AEQUO Ltd Coming Soon </title>
+        <!-- Mobile Specific -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 9]>
+        <script src="http://siva.w3itexperts.com/xhtml/js/html5shiv.min.js"></script>
+        <script src="http://siva.w3itexperts.com/xhtml/js/respond.min.js"></script>
+        <![endif]-->
+        <!-- Stylesheets -->
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/butler" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/bootstrap.min.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/fontawesome/css/font-awesome.min.css") }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/style.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("assets/plugins/scroll/scrollbar.css") }}">
+        <link class="skin"  rel="stylesheet" type="text/css" href="{{ asset("assets/css/skin/skin-1.css") }}">
+        <link  rel="stylesheet" type="text/css" href="{{ asset("assets/css/templete.css") }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset("assets/css/switcher.html") }}"/>
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    </head>
+    <body id="bg">
+        {% block body %}
+
+        {% endblock %}
+        {% block javascripts %}
+            <!-- JavaScript  files ========================================= -->
+            <script type="text/javascript" src="{{ asset("assets/js/jquery.min.js") }}"></script>
+            <!-- jquery.min js -->
+            <script type="text/javascript" src="{{ asset("assets/js/bootstrap.min.js") }}"></script>
+            <!-- bootstrap.min js -->
+            <script type="text/javascript" src="{{ asset("assets/js/jquery.countdown.js") }}"></script>
+            <!-- jquery countdown -->
+            <script type="text/javascript" src="{{ asset("assets/plugins/scroll/scrollbar.min.js") }}"></script>
+            <!-- custom fuctions  -->
+            <script type="text/javascript" src="{{ asset("assets/js/custom.js") }}"></script>
+            <!-- custom fuctions  -->
+            <script type="text/javascript" src="../../www.google.com/recaptcha/api.js"></script>
+            <!-- google api for recaptcha  -->
+            <script type="text/javascript" src="{{ asset("assets/js/dz.ajax.js") }}"></script>
+            <!-- dz ajax fuctions  -->
+        {% endblock %}
+    </body>
+</html>

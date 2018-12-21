@@ -1,0 +1,165 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="page-wraper">
+        <!-- Content -->
+        <div class="blog-page-content style-1 sticky-header ">
+            <!-- Side Nav -->
+            <div id="mySidenav" class="sidenav coming-side-bar content "> <a href="javascript:void(0)" class="closebtn bg-primary" onClick="closeNav()">&times;</a>
+                <div class="clearfix"></div>
+                <div class="p-a15 p-t15">
+                    <div class="text-center">
+                        <h2 class="m-b10">About Us</h2>
+                        <p class="m-b5" style="font-size: 1.3em;text-align: justify">Aequo Ltd is the realization of 17 years of expertise on Quality Infrastructure System :
+
+                            Metrology, Standardization, Accreditation, Certification, Inspection Control, Testing and Quality Management (ISO 17025, ISO 17020, ISO 9001, …)
+
+                            We are also setting up of an efficient risk management system within your company:
+
+                            best practices integration, certification support (ISO14001, ISO 18001, ISO 31000 …).</p>
+
+                    </div>
+                    <div class="row m-t50">
+                        <div class="w3-box">
+                            <div class="w3-media w3-img-effect off-color ">
+                                <figure>
+                                    <img src="{{ asset("assets/images/Karim.jpg") }}" alt="Mr.Karim Nafati,
+								Directeur Général de l'ACP Tunisie" style="display: block;
+  																		margin-left: auto;
+  																		margin-right: auto;">
+                                    <br>
+                                    <center> <figcaption>Karim Nafati, CEO of AEQUO Tunisia.</figcaption> </center>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-a30 p-t15 text-center">
+                        <h2 class="m-b10">Contact Us</h2>
+                        <p class="max-w500 m-auto m-b0">Tunisian Professional Coaching Agency                                             (216) 92 649 907    contact@aequoltd.com</p>
+                    </div>
+                    <div class="p-lr15 clearfix p-b30">
+                        <div class="dzFormMsg"></div>
+                        {{ form_start(form1, {'attr': {'class': 'dzForm'}}) }}
+                            <input type="hidden" value="Contact" name="dzToDo" />
+                            <div class="clearfix">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            {{ form_widget(form1.name) }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                            {{ form_widget(form1.email) }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
+                                            {{ form_widget(form1.message) }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    {{ form_widget(form1.save, { 'label': 'Submit'})}}
+                                    <button name="Resat" type="reset" value="Reset"  class="site-button  m-l15"> <span>Reset</span> </button>
+                                </div>
+                            </div>
+                            {{ form_rest(form1) }}
+                            {{ form_end(form1) }}
+                    </div>
+                    <div class="p-lr15 clearfix">
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="icon-bx-wraper bx-style-1 p-a30 center col">
+                                <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-phone"></i></a> </div>
+                                <div class="icon-content">
+                                    <h5>Phone</h5>
+                                    <p>+(216) 92 649 907</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="icon-bx-wraper bx-style-1 p-a30 center col">
+                                <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-envelope"></i></a> </div>
+                                <div class="icon-content">
+                                    <h6>Email</h6>
+                                    <p>contact@aequoltd.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4  m-b30">
+                            <div class="icon-bx-wraper bx-style-1 p-a30 center col">
+                                <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-skype"></i></a> </div>
+                                <div class="icon-content">
+                                    <h5>Skype</h5>
+                                    <p>Aequo Ltd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Side Nav End-->
+        <!-- Coming Soon -->
+        <div class="w3-coming-soon bg-img-fix w3-coming-soon-full {#overlay-black-light#}" style="background-color: white;">
+            <div class="container w3-coming-bx "  style="top: 180px;">
+                <div class="top-head text-center logo-header">
+
+                        <img src="{{ asset("assets/images/logo_comp-final1.png") }}" style="height: 150px; width: 300px" alt=""/>
+
+                    <h3 class="custom-title" style="color: black;">"Reach new Heights"</h3>
+                </div>
+                <div class="custom-parag row" style="color: black; margin-top: 30px">
+                    <div class="col-lg-offset-3 col-lg-6">
+                        We are what our partners expect from us, a coalition of expertise of technical assistance and human resource support to the benefit of industrial companies, laboratories and quality departments.
+                    </div>
+                </div>
+                <div class="coming-soon-content text-center text-white m-b30">
+                    <h2 style="color: black">Coming Soon</h2>
+                </div>
+
+                <div class="text-center m-t50 info-style-1">
+                    <a href="#" class="site-button radius-xl m-lr5" onClick="openNav()">About AEQUO</a>
+                    <a data-toggle="modal" href="" data-target="#myModal" class="site-button radius-xl m-lr5">Subscribe</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Coming Soon End -->
+    </div>
+    <!-- Content END-->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade contact-form" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    {{ form_start(form, {'attr': {'class': 'p-b20'}}) }}
+                        <div class="row">
+                            <button name="Resat" type="reset" value="Reset" data-dismiss="modal" class="close-btn">&times; </button>
+                            <div class="col-md-12 text-center text-white">
+                                <h2 class="text-white">Stay Informed</h2>
+                                <p>Welcome to AEQUO - Tunisia</p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="m-b15">{{ form_widget(form.email)}}</div>
+                            </div>
+                            <div class="col-md-12">
+                                {{ form_widget(form.save, { 'label': 'Subscribe'})}}
+                            </div>
+                        </div>
+                    {{ form_rest(form) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+{% endblock %}
