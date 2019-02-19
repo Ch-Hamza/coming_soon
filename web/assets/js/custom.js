@@ -41,17 +41,40 @@ function onePageLayout(){
 		if($(window).width() <= 800)
 		{
 			document.getElementById("mySidenav").style.left = "0";
-			document.getElementById("main").style.marginLeft = "100%";
+			//document.getElementById("main").style.marginLeft = "100%";
 		}
 		else
 		{
 			document.getElementById("mySidenav").style.left = "0px";
-			document.getElementById("main").style.marginLeft = "800px";
+			//document.getElementById("main").style.marginLeft = "800px";
 		}
 	}
+	function customopenNav() {
+        if($(window).width() <= 800)
+        {
+            document.getElementById("mySidenav").style.left = "0";
+            //document.getElementById("main").style.marginLeft = "100%";
+        }
+        else
+        {
+            document.getElementById("mySidenav").style.left = "0px";
+            //document.getElementById("main").style.marginLeft = "800px";
+        }
+        document.getElementById('message_from_name').focus();
+    }
+	$(document).mouseup(function(e)
+	{
+		var container = $("#mySidenav");
+
+		// if the target of the click isn't the container nor a descendant of the container
+		if (!container.is(e.target) && container.has(e.target).length === 0)
+		{
+            closeNav();
+		}
+	});
 	function closeNav() {
 		document.getElementById("mySidenav").style.left = "-800px";
-		document.getElementById("main").style.marginLeft= "0";
+		//document.getElementById("main").style.marginLeft= "0";
 	}
 /* Scroll JS */
 	(function($){

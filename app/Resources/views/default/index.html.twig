@@ -12,11 +12,11 @@
                         <h2 class="m-b10">About Us</h2>
                         <p class="m-b5" style="font-size: 1.3em;text-align: justify">Aequo Ltd is the realization of 17 years of expertise on Quality Infrastructure System :
 
-                            Metrology, Standardization, Accreditation, Certification, Inspection Control, Testing and Quality Management (ISO 17025, ISO 17020, ISO 9001, …)
+                            Metrology, Standardization, Accreditation, Certification, Inspection Control, Testing and Quality Management (ISO 9001, ISO 17025, ISO 17020, ISO 15189)
 
                             We are also setting up of an efficient risk management system within your company:
 
-                            best practices integration, certification support (ISO14001, ISO 18001, ISO 31000 …).</p>
+                            best practices integration, certification support (ISO 14001, ISO 18001, ISO 31000…)</p>
 
                     </div>
                     <div class="row m-t50">
@@ -24,11 +24,11 @@
                             <div class="w3-media w3-img-effect off-color ">
                                 <figure>
                                     <img src="{{ asset("assets/images/Karim.jpg") }}" alt="Mr.Karim Nafati,
-								Directeur Général de l'ACP Tunisie" style="display: block;
-  																		margin-left: auto;
-  																		margin-right: auto;">
+                                Directeur Général de l'ACP Tunisie" style="display: block;
+                                                                        margin-left: auto;
+                                                                        margin-right: auto;">
                                     <br>
-                                    <center> <figcaption>Karim Nafati, CEO of AEQUO Tunisia.</figcaption> </center>
+                                    <center> <figcaption>Karim Nafati, CEO of AEQUO Ltd.</figcaption> </center>
                                 </figure>
                             </div>
                         </div>
@@ -42,36 +42,36 @@
                     <div class="p-lr15 clearfix p-b30">
                         <div class="dzFormMsg"></div>
                         {{ form_start(form1, {'attr': {'class': 'dzForm'}}) }}
-                            <input type="hidden" value="Contact" name="dzToDo" />
-                            <div class="clearfix">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            {{ form_widget(form1.name) }}
-                                        </div>
+                        <input type="hidden" value="Contact" name="dzToDo" />
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        {{ form_widget(form1.name) }}
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                            {{ form_widget(form1.email) }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
-                                            {{ form_widget(form1.message) }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    {{ form_widget(form1.save, { 'label': 'Submit'})}}
-                                    <button name="Resat" type="reset" value="Reset"  class="site-button  m-l15"> <span>Reset</span> </button>
                                 </div>
                             </div>
-                            {{ form_rest(form1) }}
-                            {{ form_end(form1) }}
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                        {{ form_widget(form1.email) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
+                                        {{ form_widget(form1.message) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                {{ form_widget(form1.save, { 'label': 'Submit'})}}
+                                <button name="Resat" type="reset" value="Reset"  class="site-button  m-l15"> <span>Reset</span> </button>
+                            </div>
+                        </div>
+                        {{ form_rest(form1) }}
+                        {{ form_end(form1) }}
                     </div>
                     <div class="p-lr15 clearfix">
                         <div class="col-md-4 col-sm-4 m-b30">
@@ -107,26 +107,94 @@
         </div>
         <!-- Side Nav End-->
         <!-- Coming Soon -->
-        <div class="w3-coming-soon bg-img-fix w3-coming-soon-full {#overlay-black-light#}" style="background-color: white;">
-            <div class="container w3-coming-bx "  style="top: 180px;">
+        <div class="w3-coming-soon bg-img-fix w3-coming-soon-full" style="background-color: white;">
+            <div class="container w3-coming-bx "  style="top: 150px;">
                 <div class="top-head text-center logo-header">
-
-                        <img src="{{ asset("assets/images/logo_comp-final1.png") }}" style="height: 150px; width: 300px" alt=""/>
-
-                    <h3 class="custom-title" style="color: black;">"Reach new Heights"</h3>
+                    <img src="{{ asset("assets/images/logo_comp-final1.png") }}" style="height: 150px; width: 300px" alt=""/>
+                    <h4 style="color: black;font-weight: 900">"Reach new Heights"</h4>
                 </div>
-                <div class="custom-parag row" style="color: black; margin-top: 30px">
+                <div class="custom-parag row" style="color: black;">
                     <div class="col-lg-offset-3 col-lg-6">
                         We are what our partners expect from us, a coalition of expertise of technical assistance and human resource support to the benefit of industrial companies, laboratories and quality departments.
                     </div>
                 </div>
-                <div class="coming-soon-content text-center text-white m-b30">
-                    <h2 style="color: black">Coming Soon</h2>
+
+                <div style="color: steelblue;margin-top: 70px; font-weight: 600; font-size: 1.7em">LATEST NEWS</div>
+                <div class=" custom-container-carousel">
+                    <div id="text-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="row">
+                            <div class="col-xs-offset-2 col-xs-8">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="text-center">29/12/2018 : ISO 10012:2003</h3>
+                                                <div class=" carousel-text">
+                                                    Measurement management systems.
+                                                    Requirements for measurement processes and measuring equipment
+                                                    <br>Sousse – Tunisia
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="text-center">19&20/01/2019 : ISO 10012:2003</h3>
+                                                <div class="text-center carousel-text">
+                                                    Measurement management systems.
+                                                    Requirements for measurement processes and measuring equipment
+                                                    <br>Hammamet – Tunisia
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="text-center">28&29/01/2019 : ISO 31000:2018</h3>
+                                                <div class="text-center carousel-text">
+                                                    Risk Management - Guidelines
+                                                    <br>Tunis – Tunisia
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="carousel-content">
+                                            <div>
+                                                <h3 class="text-center">10-14/02/2019 : ISO 10012:2003</h3>
+                                                <div class="text-center carousel-text">
+                                                    Measurement management systems.
+                                                    Requirements for measurement processes and measuring equipment
+                                                    <br>Alger – Algeria
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" style="color: black;"></span>
+                        </a>
+                        <a class="right carousel-control" href="#text-carousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" style="color: black;"></span>
+                        </a>
+
+                    </div>
                 </div>
 
-                <div class="text-center m-t50 info-style-1">
-                    <a href="#" class="site-button radius-xl m-lr5" onClick="openNav()">About AEQUO</a>
-                    <a data-toggle="modal" href="" data-target="#myModal" class="site-button radius-xl m-lr5">Subscribe</a>
+                <br>
+                <div class="text-center">
+                    <h1 class="under_cons" style="color: black;margin-top: -20px;">Our website is under construction</h1>
+                </div>
+
+                <div class="text-center info-style-1">
+                    <a href="#" class="site-button radius-xl m-lr0 button-eff" onClick="openNav()">About Us</a>
+                    <a href="#" class="site-button radius-xl m-lr0 custom button-eff" onClick="customopenNav()">Contact Us</a>
+                    <a data-toggle="modal" href="" data-target="#myModal" class="button-eff site-button radius-xl m-lr0">Subscribe</a>
                 </div>
 
             </div>
@@ -134,26 +202,25 @@
         <!-- Coming Soon End -->
     </div>
     <!-- Content END-->
-    </div>
     <!-- Modal -->
     <div class="modal fade contact-form" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
                     {{ form_start(form, {'attr': {'class': 'p-b20'}}) }}
-                        <div class="row">
-                            <button name="Resat" type="reset" value="Reset" data-dismiss="modal" class="close-btn">&times; </button>
-                            <div class="col-md-12 text-center text-white">
-                                <h2 class="text-white">Stay Informed</h2>
-                                <p>Welcome to AEQUO - Tunisia</p>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="m-b15">{{ form_widget(form.email)}}</div>
-                            </div>
-                            <div class="col-md-12">
-                                {{ form_widget(form.save, { 'label': 'Subscribe'})}}
-                            </div>
+                    <div class="row">
+                        <button name="Resat" type="reset" value="Reset" data-dismiss="modal" class="close-btn">&times; </button>
+                        <div class="col-md-12 text-center text-white">
+                            <h2 class="text-white">Stay Informed</h2>
+                            <p>Welcome to AEQUO Ltd</p>
                         </div>
+                        <div class="col-md-12">
+                            <div class="m-b15">{{ form_widget(form.email)}}</div>
+                        </div>
+                        <div class="col-md-12">
+                            {{ form_widget(form.save, { 'label': 'Subscribe'})}}
+                        </div>
+                    </div>
                     {{ form_rest(form) }}
                     {{ form_end(form) }}
                 </div>
